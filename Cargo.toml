@@ -1,0 +1,15 @@
+[package]
+name = "game_2d"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.dev]
+opt-lavel = 1
+
+[profile.dev.package."*"]
+opt-lavel = 3
+
+[dependencies]
+bevy = { version ="0.10.1", features = ["dynamic_linking"] }
